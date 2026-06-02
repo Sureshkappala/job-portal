@@ -1,96 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>HR Dashboard</title>
-
-<link rel="stylesheet"
-href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <div class="overlay" onclick="toggleDashboardMenu()"></div>
 
-<div class="dashboard">
+<button class="dashboard-menu-btn" onclick="toggleDashboardMenu()">
+    ☰ Dashboard Menu
+</button>
 
-<div class="sidebar">
+<div class="dashboard-container">
 
-<h2>
-STACKLY HR
-</h2>
+    <div class="sidebar">
 
-<a href="#">Dashboard</a>
+        <h2>STACKLY HR</h2>
 
-<a href="#">Post Job</a>
+        <ul>
+            <li><a href="#">🏠 Dashboard</a></li>
+            <li><a href="hr-profile.html">👤 HR Profile</a></li>
+            <li><a href="post-job.html">📢 Post Job</a></li>
+            <li><a href="manage-jobs.html">📄 Manage Jobs</a></li>
+            <li><a href="applicants.html">👥 Applicants</a></li>
+            <li><a href="hr-settings.html">⚙️ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
 
-<a href="#">Manage Jobs</a>
+    </div>
 
-<a href="#">Applications</a>
+    <div class="main-content">
 
-<a href="#">Messages</a>
+        <div class="welcome-banner">
+            <h1>Welcome HR 👋</h1>
+            <p>Manage job postings and applicants efficiently.</p>
+        </div>
 
-<a href="#">Settings</a>
+        <div class="stats">
 
-<a href="../login.html">Logout</a>
+            <div class="card">
+                <h2>25</h2>
+                <p>Active Jobs</p>
+            </div>
 
-</div>
+            <div class="card">
+                <h2>120</h2>
+                <p>Applicants</p>
+            </div>
 
-<div class="main-content">
+            <div class="card">
+                <h2>18</h2>
+                <p>Interviews</p>
+            </div>
 
-<h1>
-Welcome HR Manager
-</h1>
+        </div>
 
-<div class="cards">
-
-<div class="card">
-
-<h2>
-25
-</h2>
-
-<p>
-Active Jobs
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>
-120
-</h2>
-
-<p>
-Applications
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>
-15
-</h2>
-
-<p>
-Interviews
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
 </body>
-
 </html>

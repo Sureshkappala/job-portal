@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Dashboard</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+    <div class="overlay" onclick="toggleDashboardMenu()"></div>
+
+<button class="dashboard-menu-btn" onclick="toggleDashboardMenu()">
+    ☰ 
+</button>
 
 <div class="dashboard-container">
 
@@ -20,11 +24,11 @@
 
         <ul>
             <li><a href="#">🏠 Dashboard</a></li>
-            <li><a href="#">👤 My Profile</a></li>
-            <li><a href="#">📄 Applied Jobs</a></li>
-            <li><a href="#">❤️ Saved Jobs</a></li>
-            <li><a href="#">💬 Messages</a></li>
-            <li><a href="#">⚙️ Settings</a></li>
+            <li><a href="profile.html">👤 My Profile</a></li>
+            <li><a href="applied-jobs.html">📄 Applied Jobs</a></li>
+            <li><a href="saved-jobs.html">❤️ Saved Jobs</a></li>
+            <li><a href="messages.html">💬 Messages</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
             <li><a href="../login.html">🚪 Logout</a></li>
         </ul>
 
@@ -33,9 +37,24 @@
     <!-- Main Content -->
     <div class="main-content">
 
-        <h1>Welcome Employee 👋</h1>
+    <div class="top-section">
 
-        <div class="stats">
+        <div class="welcome-banner">
+            <h1>Welcome Back 👋</h1>
+            <p>Your next opportunity is waiting.</p>
+        </div>
+
+        <div class="profile-card">
+            <img src="../images/company1.webp" alt="Profile">
+
+            <h3>Suresh</h3>
+
+            <p>Frontend Developer</p>
+        </div>
+
+    </div>
+
+    <div class="stats">
 
             <div class="card">
                 <h2>12</h2>
@@ -91,6 +110,7 @@
     </div>
 
 </div>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

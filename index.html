@@ -19,12 +19,13 @@ href="css/style.css">
 
 <nav>
 
-<a href="index.html"
-class="logo">
-
-STACKLY
-
+<a href="index.html" class="logo">
+    <img src="./images/logo.webp" alt="Stackly Logo">
 </a>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
 
 <ul class="nav-links">
 
@@ -45,6 +46,11 @@ About
 Jobs
 </a>
 </li>
+<li>
+<a href="pages/companies.html">
+Companies
+</a>
+
 
 <li>
 <a href="contact.html">
@@ -67,22 +73,29 @@ Login
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>
-Find Your Dream Job
-</h1>
+        <span class="tag">#1 Job Portal Platform</span>
 
-<p>
-Search thousands of jobs from top companies and start your career today.
-</p>
+        <h1>
+            Find Your Dream Job &
+            Build Your Future
+        </h1>
 
-<a href="jobs.html"
-class="btn">
-Apply Now
-</a>
+        <p>
+            Discover thousands of job opportunities from top companies across India.
+        </p>
 
-</div>
+        <div class="hero-buttons">
+            <a href="jobs.html" class="btn-primary">Explore Jobs</a>
+            <a href="register.html" class="btn-secondary">Get Started</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/hero.webp" alt="Hero">
+    </div>
 
 </section>
 
@@ -157,32 +170,6 @@ Apply Now
 </div>
 
 </div>
-<section class="companies">
-
-<h2>
-Top Hiring Companies
-</h2>
-
-<div class="company-container">
-
-<div class="company-card">
-Google
-</div>
-
-<div class="company-card">
-Microsoft
-</div>
-
-<div class="company-card">
-Amazon
-</div>
-
-<div class="company-card">
-Infosys
-</div>
-
-</div>
-<section class="testimonials">
 
 <h2>
 Success Stories
@@ -227,6 +214,31 @@ Success Stories
 </div>
 
 </div>
+<section class="companies" id="companies">
+
+    <h2>Top Hiring Companies</h2>
+
+    <div class="company-container">
+
+        <div class="company-card">
+            TCS
+        </div>
+
+        <div class="company-card">
+            Infosys
+        </div>
+
+        <div class="company-card">
+            Wipro
+        </div>
+
+        <div class="company-card">
+            Accenture
+        </div>
+
+    </div>
+
+</section>
 
 <footer class="footer">
 
@@ -300,7 +312,13 @@ Follow Us
 </footer>
 
 </section>
+<script src="js/script.js"></script>
 
 </body>
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
 
 </html>

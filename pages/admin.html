@@ -1,96 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Admin Dashboard</title>
-
-<link rel="stylesheet"
-href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <div class="overlay" onclick="toggleDashboardMenu()"></div>
 
-<div class="dashboard">
+<button class="dashboard-menu-btn" onclick="toggleDashboardMenu()">
+    ☰ Dashboard Menu
+</button>
 
-<div class="sidebar">
+<div class="dashboard-container">
 
-<h2>
-STACKLY ADMIN
-</h2>
+    <div class="sidebar">
 
-<a href="#">Dashboard</a>
+        <h2>STACKLY ADMIN</h2>
 
-<a href="#">Manage Users</a>
+        <ul>
+            <li><a href="#">🏠 Dashboard</a></li>
+            <li><a href="admin-profile.html">👤 Admin Profile</a></li>
+            <li><a href="users.html">👥 Users</a></li>
+            <li><a href="companies.html">🏢 Companies</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="admin-settings.html">⚙️ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
 
-<a href="#">Manage HR</a>
+    </div>
 
-<a href="#">Manage Jobs</a>
+    <div class="main-content">
 
-<a href="#">Reports</a>
+        <div class="welcome-banner">
+            <h1>Welcome Admin 👋</h1>
+            <p>Monitor and manage the complete Job Portal.</p>
+        </div>
 
-<a href="#">Settings</a>
+        <div class="stats">
 
-<a href="../login.html">Logout</a>
+            <div class="card">
+                <h2>500</h2>
+                <p>Users</p>
+            </div>
 
-</div>
+            <div class="card">
+                <h2>50</h2>
+                <p>Companies</p>
+            </div>
 
-<div class="main-content">
+            <div class="card">
+                <h2>150</h2>
+                <p>Jobs Posted</p>
+            </div>
 
-<h1>
-Welcome Admin
-</h1>
+        </div>
 
-<div class="cards">
-
-<div class="card">
-
-<h2>
-500
-</h2>
-
-<p>
-Users
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>
-50
-</h2>
-
-<p>
-HR Managers
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>
-200
-</h2>
-
-<p>
-Jobs Posted
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
 </body>
-
 </html>

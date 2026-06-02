@@ -37,17 +37,17 @@ Welcome Back
 
 <div class="role-selection">
 
-<button type="button" onclick="setRole('employee')">
-👤 Employee
+<button class="role-btn" type="button" onclick="setRole('employee')">
+    👤 Employee
 </button>
 
 
-<button type="button" onclick="setRole('hr')">
+<button  class="role-btn" type="button" onclick="setRole('hr')">
 🏢 HR
 </button>
 
 
-<button type="button" onclick="setRole('admin')">
+<button  class="role-btn" type="button" onclick="setRole('admin')">
 👨‍💼 Admin
 </button>
 
@@ -64,8 +64,13 @@ type="password"
 id="password"
 placeholder="Password">
 
-<button type="button" onclick="checkLogin()">
-Login
+<button
+type="button"
+class="login-btn-main"
+onclick="checkLogin()">
+
+    Login
+
 </button>
 
 <p>
