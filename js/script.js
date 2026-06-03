@@ -5,7 +5,6 @@ function setRole(role) {
 
     selectedRole = role;
 
-    alert(role.toUpperCase() + " Selected");
 
 }
 
