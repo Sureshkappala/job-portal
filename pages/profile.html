@@ -10,27 +10,56 @@
 
 <body>
 
-<div class="main-content">
+<div class="dashboard-container">
 
-    <h1>👤 My Profile</h1>
+    <!-- Sidebar -->
+    <div class="sidebar">
 
-    <div class="profile-card">
+        <h2>
+    <a href="employee.html" class="dashboard-logo">
+        STACKLY
+    </a>
+</h2>
 
-        <img src="../images/company1.webp" alt="Profile">
+        <ul>
+            <li><a href="employee.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="applied-jobs.html">📄 Applied Jobs</a></li>
+            <li><a href="saved-jobs.html">❤️ Saved Jobs</a></li>
+            <li><a href="messages.html">💬 Messages</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
 
-        <h2>Suresh</h2>
+    </div>
 
-        <p><strong>Role:</strong> Frontend Developer</p>
+    <!-- Main Content -->
+    <div class="main-content">
 
-        <p><strong>Email:</strong> suresh@gmail.com</p>
+        <div class="welcome-banner">
+            <h1>👤 My Profile</h1>
+            <p>Manage your profile information</p>
+        </div>
 
-        <p><strong>Phone:</strong> +91 9876543210</p>
+        <div class="profile-card">
 
-        <p><strong>Location:</strong> Hyderabad</p>
+            <img src="../images/company1.webp" alt="Profile">
 
-        <button class="btn">
-            Edit Profile
-        </button>
+            <h2>Suresh</h2>
+
+            <p><strong>Role:</strong> Frontend Developer</p>
+
+            <p><strong>Email:</strong> suresh@gmail.com</p>
+
+            <p><strong>Phone:</strong> +91 9876543210</p>
+
+            <p><strong>Location:</strong> Hyderabad</p>
+
+            <button class="btn" onclick="window.location.href='404.html'">
+    Edit Profile
+</button>
+
+        </div>
 
     </div>
 

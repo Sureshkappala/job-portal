@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<div class="main-content">
+<div class="dashboard-container">
 
-    <h1>Settings</h1>
+    <div class="sidebar">
+        <h2>
+    <a href="employee.html" class="dashboard-logo">
+        STACKLY
+    </a>
+</h2>
 
-    <div class="card">
-        <p>Change Password</p>
-        <p>Update Profile</p>
-        <p>Notification Settings</p>
+        <ul>
+            <li><a href="employee.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="applied-jobs.html">📄 Applied Jobs</a></li>
+            <li><a href="saved-jobs.html">❤️ Saved Jobs</a></li>
+            <li><a href="messages.html">💬 Messages</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <div class="welcome-banner">
+            <h1>⚙️ Settings</h1>
+            <p>Manage your account preferences</p>
+        </div>
+
+        <div class="profile-card">
+
+            <h2>Account Settings</h2>
+
+            <br>
+
+            <input type="text" placeholder="Full Name">
+
+            <br><br>
+
+            <input type="email" placeholder="Email">
+
+            <br><br>
+
+            <input type="password" placeholder="New Password">
+
+            <br><br>
+
+            <button class="btn" onclick="window.location.href='404.html'">
+    save changes
+</button>
+
+        </div>
+
     </div>
 
 </div>

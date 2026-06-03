@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Settings</title>
-
-    <link rel="stylesheet" href="../css/style.css">
+<title>Admin Profile</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+
+<div class="dashboard-container">
+
+<div class="sidebar">
+<h2>
+    <a href="admin.html" class="dashboard-logo">
+        STACKLY ADMIN
+    </a>
+</h2>
+
+<ul>
+<li><a href="admin.html">🏠 Dashboard</a></li>
+<li><a href="admin-profile.html">👤 Admin Profile</a></li>
+<li><a href="users.html">👥 Users</a></li>
+<li><a href="companies-admin.html">🏢 Companies</a></li>
+<li><a href="reports.html">📊 Reports</a></li>
+<li><a href="admin-settings.html">⚙️ Settings</a></li>
+<li><a href="../login.html">🚪 Logout</a></li>
+</ul>
+
+</div>
 
 <div class="main-content">
 
-    <h1>⚙️ Settings</h1>
+<div class="welcome-banner">
+<h1>👤 Admin Profile</h1>
+<p>Manage administrator account</p>
+</div>
 
-    <div class="card">
+<div class="profile-card">
 
-        <h3>Account Settings</h3>
+<img src="../images/company1.webp" alt="Admin">
 
-        <p>Change Password</p>
+<h2>System Administrator</h2>
 
-        <p>Update Profile</p>
+<p><strong>Email:</strong> admin@stackly.com</p>
+<p><strong>Phone:</strong> +91 9876543210</p>
+<p><strong>Role:</strong> Super Admin</p>
 
-        <p>Email Notifications</p>
+<button class="btn" onclick="window.location.href='404.html'">
+    Edit Profile
+</button>
 
-        <p>Privacy Settings</p>
+</div>
 
-    </div>
-
+</div>
 </div>
 
 </body>

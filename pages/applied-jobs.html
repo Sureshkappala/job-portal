@@ -1,25 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied Jobs</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<div class="main-content">
+<div class="dashboard-container">
 
-    <h1>Applied Jobs</h1>
+    <!-- Sidebar -->
+    <div class="sidebar">
 
-    <div class="card">
-        <h3>TCS</h3>
-        <p>Frontend Developer</p>
-        <p>Status: Shortlisted</p>
+        <h2>
+    <a href="employee.html" class="dashboard-logo">
+        STACKLY
+    </a>
+</h2>
+
+        <ul>
+            <li><a href="employee.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="applied-jobs.html">📄 Applied Jobs</a></li>
+            <li><a href="saved-jobs.html">❤️ Saved Jobs</a></li>
+            <li><a href="messages.html">💬 Messages</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+
     </div>
 
-    <div class="card">
-        <h3>Infosys</h3>
-        <p>Java Developer</p>
-        <p>Status: Under Review</p>
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <div class="welcome-banner">
+            <h1>📄 Applied Jobs</h1>
+            <p>Track all your job applications</p>
+        </div>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>12</h2>
+                <p>Total Applied</p>
+            </div>
+
+            <div class="card">
+                <h2>4</h2>
+                <p>Shortlisted</p>
+            </div>
+
+            <div class="card">
+                <h2>3</h2>
+                <p>Interviews</p>
+            </div>
+
+        </div>
+
+        <div class="recent-section">
+
+            <h2>Application History</h2>
+
+            <table>
+
+                <tr>
+                    <th>Company</th>
+                    <th>Position</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>TCS</td>
+                    <td>Frontend Developer</td>
+                    <td>Shortlisted</td>
+                </tr>
+
+                <tr>
+                    <td>Infosys</td>
+                    <td>Java Developer</td>
+                    <td>Under Review</td>
+                </tr>
+
+                <tr>
+                    <td>Wipro</td>
+                    <td>React Developer</td>
+                    <td>Interview Scheduled</td>
+                </tr>
+
+                <tr>
+                    <td>Accenture</td>
+                    <td>UI Developer</td>
+                    <td>Applied</td>
+                </tr>
+
+            </table>
+
+        </div>
+
     </div>
 
 </div>

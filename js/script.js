@@ -14,8 +14,12 @@ function toggleMenu() {
 
     const navLinks = document.querySelector(".nav-links");
 
-    if(navLinks){
-        navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        document.body.style.overflow = "hidden";
+    }else{
+        document.body.style.overflow = "auto";
     }
 
 }

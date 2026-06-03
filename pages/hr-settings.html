@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Settings</title>
-
-    <link rel="stylesheet" href="../css/style.css">
+<title>HR Settings</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+
+<div class="dashboard-container">
+
+<div class="sidebar">
+<h2>
+    <a href="hr.html" class="dashboard-logo">
+        STACKLY HR
+    </a>
+</h2>
+
+<ul>
+<li><a href="hr.html">🏠 Dashboard</a></li>
+<li><a href="hr-profile.html">👤 HR Profile</a></li>
+<li><a href="post-job.html">📢 Post Job</a></li>
+<li><a href="manage-jobs.html">📄 Manage Jobs</a></li>
+<li><a href="applicants.html">👥 Applicants</a></li>
+<li><a href="hr-settings.html">⚙️ Settings</a></li>
+<li><a href="../login.html">🚪 Logout</a></li>
+</ul>
+
+</div>
 
 <div class="main-content">
 
-    <h1>⚙️ Settings</h1>
+<div class="welcome-banner">
+<h1>⚙️ HR Settings</h1>
+</div>
 
-    <div class="card">
+<div class="profile-card">
 
-        <h3>Account Settings</h3>
+<input type="email" placeholder="HR Email"><br><br>
 
-        <p>Change Password</p>
+<input type="password" placeholder="New Password"><br><br>
 
-        <p>Update Profile</p>
+<button class="btn" onclick="window.location.href='404.html'">
+    save Changes
+</button>
 
-        <p>Email Notifications</p>
+</div>
 
-        <p>Privacy Settings</p>
-
-    </div>
-
+</div>
 </div>
 
 </body>
