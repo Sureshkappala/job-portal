@@ -1973,34 +1973,7 @@ body.menu-open{
     text-decoration:none;
     color:white;
 }
-.hr-sidebar{
-    width:250px;
-    background:#001845;
-    min-height:100vh;
-    padding:20px;
-}
 
-.hr-sidebar ul li{
-    margin:15px 0;
-}
-
-.hr-sidebar ul li a{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:white;
-    text-decoration:none;
-}
-.recent-section{
-    margin-top: 30px;
-}
-.hr-stats{
-    margin-top:30px;
-}
-
-.hr-stats .card{
-    margin-bottom:15px;
-}
 .logo img{
     width:180px;
     height:auto;
@@ -2022,4 +1995,63 @@ body.menu-open{
     height:auto;
     display:block;
     object-fit:contain;
+}
+@media (max-width: 768px){
+
+.dashboard-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.sidebar{
+    width:90px;
+    min-width:90px;
+    padding:15px 5px;
+}
+
+.sidebar h2{
+    font-size:18px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    font-size:11px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:5px;
+}
+
+.main-content{
+    flex:1;
+    padding:12px;
+}
+
+.welcome-banner{
+    padding:15px;
+}
+
+.welcome-banner h1{
+    font-size:24px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.card{
+    width:100%;
+}
+
+.dashboard-logo{
+    font-size:20px;
+}
 }
