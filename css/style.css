@@ -1919,3 +1919,35 @@ body.menu-open{
 .sidebar h2{
     font-size:14px !important;
 }
+.dashboard-logo{
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+}
+
+@media (max-width:768px){
+
+    .dashboard-logo{
+        font-size:14px !important;
+        display:block;
+        text-align:center;
+        letter-spacing:1px;
+    }
+
+    .sidebar h2{
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+}
+.social-links a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:12px;
+}
+
+.social-links i{
+    width:25px;
+    text-align:center;
+}
