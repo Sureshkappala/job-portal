@@ -2001,3 +2001,14 @@ body.menu-open{
 .hr-stats .card{
     margin-bottom:15px;
 }
+.logo img{
+    width:180px;
+    height:auto;
+    display:block;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
