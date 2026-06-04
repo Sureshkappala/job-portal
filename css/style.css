@@ -1951,3 +1951,53 @@ body.menu-open{
     width:25px;
     text-align:center;
 }
+.sidebar{
+    width:250px;
+    background:#001845;
+    min-height:100vh;
+    padding:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:white;
+}
+.hr-sidebar{
+    width:250px;
+    background:#001845;
+    min-height:100vh;
+    padding:20px;
+}
+
+.hr-sidebar ul li{
+    margin:15px 0;
+}
+
+.hr-sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    text-decoration:none;
+}
+.recent-section{
+    margin-top: 30px;
+}
+.hr-stats{
+    margin-top:30px;
+}
+
+.hr-stats .card{
+    margin-bottom:15px;
+}
