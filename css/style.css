@@ -2012,3 +2012,14 @@ body.menu-open{
     align-items:center;
     text-decoration:none;
 }
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:180px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
